@@ -1,0 +1,139 @@
+/*******************************************************************
+product
+******************************************************/
+.main {
+  margin-bottom: 68px;
+
+  &__container {
+    max-width: $containers-max-width;
+    padding: $containers-paddings-for-small-screens;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
+
+.product-search-delivery {
+  $search-height: 40px;
+  
+  margin-bottom: 24px;
+  
+  .search_container {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    vertical-align: center;
+    border-bottom: 1px solid #757575;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .search_input {
+    width: 100%;
+    border: 0;
+    opacity: 50%;
+    line-height: 56px;
+    padding-left: 8px;
+    position: relative;
+  }
+
+  &__field {
+    border-style: hidden;
+    width: 100%;
+  }
+}
+
+.catalog-header{
+  margin: 56px 0 14px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.catalog {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+}
+
+.product {
+  &__photo {
+    display: block;
+    img {
+      display: block;
+      object-fit: cover;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__categories {
+    padding: inherit;
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-left: 3px;
+    }
+
+    &__item:before {
+      content: "";
+      height: 3px;
+      width: 3px;
+      background: #626262;
+      display: block;
+      border-radius: 2px;
+      margin-right: 3px;
+    }
+  }
+
+  &__details {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 640px) {
+  .product-search-delivery {
+    &__field {
+      font-size: 16px;
+    }
+  }
+
+  .product:nth-last-child(-n+4) {
+    display: block;
+  }
+
+  .catalog {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .hidding__product_details {
+    display: none;
+  }
+
+  .catalog {
+    &__container {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+    }
+  }
+}

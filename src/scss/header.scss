@@ -1,0 +1,89 @@
+/*******************************************************************
+header
+******************************************************/
+$header-height: 72px;
+$header-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+$logo-max-width: 115px;
+$logo-min-width: 105px;
+
+
+.header {
+  height: $header-height;
+  background: #fff;
+  box-shadow: $header-shadow;
+  margin-bottom: 25px;
+
+  &__container {
+    max-width: $containers-max-width;
+    padding: $containers-paddings-for-small-screens;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    img {
+      display: block;
+      width: 100%;
+      max-width: $logo-max-width;
+      min-width: $logo-min-width;
+    }
+
+  }
+
+  &__basket {
+    display: none;
+    margin-left: 27px;
+  }
+}
+
+.sign-delivery-and-basket-container {
+  display: flex;
+}
+
+.sign-delivery {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 11px;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+  }
+
+  &__button + &__button {
+    margin-left: 16px;
+  }
+
+  &__button__sign-in {
+    border: 1px solid #E0E0E0;
+  }
+
+  &__button__register {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    &__basket {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .sign-delivery {
+    &__button {
+      font-size: 13px;
+    }
+  }
+}

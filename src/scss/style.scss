@@ -1,0 +1,18 @@
+/**************************
+parameters
+***********************/
+$main-font-color: #1D1D1D;
+$second-font-color: #626262;
+$main-font-size: 13px;
+$containers-max-width: 956px;
+$containers-paddings-for-small-screens: 0 5px;
+//End of parameters
+body {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+@import 'adress-search.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'main.scss';
