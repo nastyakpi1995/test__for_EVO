@@ -1,0 +1,25 @@
+.advantages {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  &__company {
+    font-size: 24px;
+    color: gray;
+  }
+  &__information h1 {
+    color: orangered;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__information {
+    border: 1px solid gray;
+    width: 77%;
+    opacity: .8;
+    margin: 0 auto;
+    padding: 0 25px 16px 0;
+  }
+  &__details {
+    font-size: 16px;
+    padding: 0 19px;
+  }
+
+}

@@ -3,7 +3,6 @@ product
 ******************************************************/
 .main {
   margin-bottom: 68px;
-
   &__container {
     max-width: $containers-max-width;
     padding: $containers-paddings-for-small-screens;
@@ -12,42 +11,19 @@ product
   }
 }
 
-.product-search-delivery {
-  $search-height: 40px;
-  
-  margin-bottom: 24px;
-  
-  .search_container {
-    font-family: Roboto, sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    vertical-align: center;
-    border-bottom: 1px solid #757575;
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-  }
-  
-  .search_input {
-    width: 100%;
-    border: 0;
-    opacity: 50%;
-    line-height: 56px;
-    padding-left: 8px;
-    position: relative;
-  }
-
-  &__field {
-    border-style: hidden;
-    width: 100%;
-  }
+.divider {
+  height: 2px;
+  background: #a59595;
+  width: 80%;
+  margin: 0 auto;
 }
-
-.catalog-header{
-  margin: 56px 0 14px;
+.catalog-header {
+  margin: 30px 0 72px 0;
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
+  text-align: center;
+  align-items: center;
 }
 
 .catalog {
@@ -64,55 +40,41 @@ product
     img {
       display: block;
       object-fit: cover;
-      height: 250px;
+      height: 400px;
       width: 100%;
       margin-bottom: 16px;
     }
+  }
+
+  &__information {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__name {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-  }
-
-  &__categories {
-    padding: inherit;
-    display: flex;
-    font-size: 14px;
-    line-height: 21px;
-    color: #626262;
-
-    &__item {
-      display: flex;
-      align-items: center;
-      margin-left: 3px;
-    }
-
-    &__item:before {
-      content: "";
-      height: 3px;
-      width: 3px;
-      background: #626262;
-      display: block;
-      border-radius: 2px;
-      margin-right: 3px;
-    }
+    padding: 0 40px;
+    opacity: 0.9;
+    margin: 0;
   }
 
   &__details {
     font-size: 13px;
     line-height: 21px;
   }
+  &__main__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 120px;
+    column-gap: 15px;
+  }
 }
 
 @media (min-width: 640px) {
-  .product-search-delivery {
-    &__field {
-      font-size: 16px;
-    }
-  }
-
   .product:nth-last-child(-n+4) {
     display: block;
   }
@@ -126,10 +88,6 @@ product
 }
 
 @media (min-width: 1023px) {
-  .hidding__product_details {
-    display: none;
-  }
-
   .catalog {
     &__container {
       grid-template-columns: 1fr 1fr 1fr;

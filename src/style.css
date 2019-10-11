@@ -1,0 +1,228 @@
+/**************************
+parameters
+***********************/
+body {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+.arguments__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  padding: 0 20px;
+  max-width: 956px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.arguments-header {
+  opacity: 0.5;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  align-items: center;
+}
+.arguments__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.arguments__product_number {
+  height: 30px;
+  font-size: 57px;
+  margin: 0 0 37px 0;
+  color: orangered;
+  font-family: "Times New Roman", Times, serif;
+}
+.arguments__order {
+  height: 50px;
+  display: flex;
+  border: 10px solid orangered;
+  background: orangered;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.arguments__divider {
+  height: 3px;
+  opacity: 0.6;
+  background: #a59595;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.divider {
+  height: 2px;
+  opacity: 0.6;
+  background: #a59595;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*******************************************************************
+header
+******************************************************/
+.header {
+  max-width: 956px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 10px 20px;
+  opacity: 0.8;
+}
+.header__container {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url(./images/global__img_4845.jpg);
+  background-repeat: no-repeat;
+}
+.header__inform {
+  padding-top: 150px;
+  grid-template-rows: 60px 60px 100px 60px;
+  display: grid;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.header__prise {
+  color: orangered;
+  font-size: 30px;
+}
+.header__main {
+  color: orangered;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__paragraph {
+  color: white;
+  padding: 0 40px;
+}
+.header__path_to_catalog button {
+  border: 3px solid orangered;
+  border-radius: 14px;
+  background: none;
+  height: 34px;
+  color: orangered;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/*******************************************************************
+product
+******************************************************/
+.main {
+  margin-bottom: 68px;
+}
+.main__container {
+  max-width: 956px;
+  padding: 0 5px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.divider {
+  height: 2px;
+  background: #a59595;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.catalog-header {
+  margin: 30px 0 72px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  align-items: center;
+}
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+}
+
+.product__photo {
+  display: block;
+}
+.product__photo img {
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.product__information {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.product__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 40px;
+  opacity: 0.9;
+  margin: 0;
+}
+.product__details {
+  font-size: 13px;
+  line-height: 21px;
+}
+.product__main__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 120px;
+  column-gap: 15px;
+}
+
+@media (min-width: 640px) {
+  .product:nth-last-child(-n+4) {
+    display: block;
+  }
+
+  .catalog__container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+@media (min-width: 1023px) {
+  .catalog__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+  }
+}
+.advantages {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.advantages__company {
+  font-size: 24px;
+  color: gray;
+}
+.advantages__information h1 {
+  color: orangered;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.advantages__information {
+  border: 1px solid gray;
+  width: 77%;
+  opacity: 0.8;
+  margin: 0 auto;
+  padding: 0 25px 16px 0;
+}
+.advantages__details {
+  font-size: 16px;
+  padding: 0 19px;
+}
+
+/*# sourceMappingURL=style.css.map */

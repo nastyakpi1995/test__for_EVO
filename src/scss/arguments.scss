@@ -1,0 +1,61 @@
+.arguments {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    padding: 0 20px;
+    max-width: 956px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  &-header {
+    opacity: 0.5;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    align-items: center;
+  }
+  &__name {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  &__product_number {
+    height: 30px;
+    font-size: 57px;
+    margin: 0 0 37px 0;
+    color: orangered;
+    font-family: "Times New Roman", Times, serif;
+  }
+  &__order {
+    height: 50px;
+    display: flex;
+    border: 10px solid orangered;
+    background: orangered;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  &__divider {
+    height: 3px;
+    opacity: 0.6;
+    background: #a59595;
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+
+.divider {
+  height: 2px;
+  opacity: 0.6;
+  background: #a59595;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
