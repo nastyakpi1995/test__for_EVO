@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 28" width="52" height="28">
+	<defs>
+		<image width="52" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAcAQMAAAAUSQ7zAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAF0Uk5T/23kN+sAAAAMSURBVHicY2AY3gAAAOAAAVcD/vEAAAAASUVORK5CYII="/>
+		<image width="52" height="28" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAcBAMAAADcqYGDAAAAAXNSR0IB2cksfwAAAB5QTFRF/////d2///z6+ZMx+Ysi/di0+7Js+IIQ//n0+7Rxl29AOgAAAAp0Uk5T/////////////5/Ow0IAAACDSURBVHictctBDkAwEAXQpivb3kAkvYEbIPbCGTiAsLVyB7fVGmo6M01s/M3/mclT6oeYnJ20gS479rIV9NhQpvsFxj5TZtsJRkaZQ5uSWUCMIUQZQoRFKGYRihhBmBGEGEMvYygwAT1MQDcTETARXayQkWeDjDyrE8ixNYEcO1Loe06nkyr4jMzjjwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+	<use id="Слой 1" href="#img2" x="0" y="0" />
+</svg>

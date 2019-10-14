@@ -1,7 +1,9 @@
+
 .footer {
   max-width: $containers-max-width;
   text-align: center;
   margin: 0 auto;
+
   &__text {
     color: #818ab6;
     font-size: 20px;
@@ -12,4 +14,9 @@
   &__profit {
     color: #818ab6;
   }
+  &__direction:hover {
+    position: relative;
+    bottom: 14px;
+  }
 }
+

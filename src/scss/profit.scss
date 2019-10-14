@@ -11,17 +11,32 @@
   &__product {
     padding: 0 35px;
     overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
     cursor: pointer;
   }
   &__product img {
     transform: rotate(0);
-    transition: all .3s;
+    text-align: center;
+    transition: all 0.3s;
+    position: absolute;
+    top: 17px;
+    left: 18px;
   }
   &__product img:hover {
     transform: rotate(360deg);
   }
   &__product__name {
     color: #948796;
+  }
+  &__container_for_img {
+    position: relative;
+    height: 80px;
+    background: #6f7785;
+    width: 80px;
+    border-radius: 40px;
   }
   &__container {
     display: grid;
