@@ -6,7 +6,7 @@
     padding: 0 20px;
     max-width: 956px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 59px;
   }
   &-header {
     opacity: 0.5;
@@ -19,34 +19,53 @@
     align-items: center;
   }
   &__name {
+    color: #818796;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  &__product {
+    padding-right: 70px;
+  }
+  &__product:hover .arguments__product_number {
+    color: rgb(107, 117, 138);
+    padding: 0;
   }
   &__product_number {
     height: 30px;
     font-size: 57px;
     margin: 0 0 37px 0;
-    color: orangered;
+    color: #f87a02;
     font-family: "Times New Roman", Times, serif;
+  }
+  &__strong {
+    color: #766b7c;
   }
   &__order {
     height: 50px;
+    box-shadow: 0 10px 10px #d3d5dc;
     display: flex;
-    border: 10px solid orangered;
-    background: orangered;
+    border: 10px solid #f87a02;
+    background: #f87a02;
     border-radius: 30px;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
+  }
+  &__order:hover {
+    border: 10px solid #515d88;
+    background: #515d88;
   }
   &__divider {
     height: 3px;
     opacity: 0.6;
-    background: #a59595;
-    width: 80%;
-    margin: 40px auto;
+    background: #ecedf0;
+    width: 956px;;
+    margin: 30px auto;
+  }
+  &__company {
+    color: #818796;
   }
 }
 
@@ -54,7 +73,7 @@
   height: 2px;
   opacity: 0.6;
   background: #a59595;
-  width: 80%;
+  width: 956px;;
   margin: 0 auto;
 }
 

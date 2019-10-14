@@ -1,0 +1,15 @@
+.footer {
+  max-width: $containers-max-width;
+  text-align: center;
+  margin: 0 auto;
+  &__text {
+    color: #818ab6;
+    font-size: 20px;
+  }
+  &__text__i {
+    color: #818796;
+  }
+  &__profit {
+    color: #818ab6;
+  }
+}

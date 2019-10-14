@@ -1,9 +1,7 @@
 /**************************
 parameters
 ***********************/
-$main-font-color: #1D1D1D;
-$second-font-color: #626262;
-$main-font-size: 13px;
+$orangered-font-color: #f87a09;
 $containers-max-width: 956px;
 $containers-paddings-for-small-screens: 0 5px;
 //End of parameters
@@ -17,3 +15,4 @@ body {
 @import 'header.scss';
 @import 'main.scss';
 @import 'advantages.scss';
+@import 'profit.scss';
