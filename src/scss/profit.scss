@@ -9,30 +9,16 @@
     color: #948796;
   }
   &__product {
-    position: relative;
     padding: 0 35px;
     overflow: hidden;
     cursor: pointer;
   }
   &__product img {
+    transform: rotate(0);
+    transition: all .3s;
   }
-  &__product::before {
-    content: "";
-    top: 0;
-    border-radius: 0 0 50% 50%;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #1f1a1a;
-    z-index: -1;
-    transition: 0.8s;
-  }
-  &__product::before:hover {
+  &__product img:hover {
     transform: rotate(360deg);
-  } 
-  &__product:hover   {
-    transform: rotate(0deg);
   }
   &__product__name {
     color: #948796;
@@ -45,7 +31,6 @@
     height: 400px;
     list-style: none;
     margin-top: 20px;
-    
   }
 }
 

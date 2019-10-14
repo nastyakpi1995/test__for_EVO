@@ -16,7 +16,7 @@
     border: 1px solid #d0d3d8;
     height: 120px;
     opacity: .8;
-    margin: 0 auto;
+    margin: 0 50px;
     padding: 0 25px 16px 0;
     position: relative;
     overflow: hidden;
@@ -65,5 +65,11 @@
     font-size: 16px;
     padding: 0 19px;
   }
+}
 
+.divider__after__advantages {
+  max-width: $containers-max-width;
+  margin: 50px auto 0 auto;
+  background: #a59595;
+  height: 3px;
 }

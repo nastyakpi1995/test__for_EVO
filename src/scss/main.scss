@@ -12,16 +12,17 @@ product
 }
 
 .divider {
-  height: 2px;
+  height: 3px;
   max-width: $containers-max-width;
   background: #a59595;
   width: 80%;
   margin: 0 auto;
 }
 .catalog-header {
-  margin: 30px 0 72px 0;
+  margin: 30px 0 60px 0;
   font-size: 22px;
   font-weight: 400;
+  color: #818796;
   line-height: 34px;
   text-align: center;
   align-items: center;
@@ -84,11 +85,12 @@ product
     padding: 0 40px;
     opacity: 0.9;
     margin: 0;
+    color: #818796;
     cursor: pointer;
   }
 
   &__details {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 21px;
     cursor: pointer;
   }

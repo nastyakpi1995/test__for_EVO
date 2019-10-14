@@ -30,6 +30,10 @@
     color: rgb(107, 117, 138);
     padding: 0;
   }
+  &__product:hover .arguments__name {
+    // margin: 10px;
+    margin-bottom: 10px;
+  }
   &__product_number {
     height: 30px;
     font-size: 57px;

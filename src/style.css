@@ -37,6 +37,9 @@ body {
   color: #6b758a;
   padding: 0;
 }
+.arguments__product:hover .arguments__name {
+  margin-bottom: 10px;
+}
 .arguments__product_number {
   height: 30px;
   font-size: 57px;
@@ -168,7 +171,7 @@ product
 }
 
 .divider {
-  height: 2px;
+  height: 3px;
   max-width: 956px;
   background: #a59595;
   width: 80%;
@@ -176,9 +179,10 @@ product
 }
 
 .catalog-header {
-  margin: 30px 0 72px 0;
+  margin: 30px 0 60px 0;
   font-size: 22px;
   font-weight: 400;
+  color: #818796;
   line-height: 34px;
   text-align: center;
   align-items: center;
@@ -234,10 +238,11 @@ product
   padding: 0 40px;
   opacity: 0.9;
   margin: 0;
+  color: #818796;
   cursor: pointer;
 }
 .product__details {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 21px;
   cursor: pointer;
 }
@@ -283,7 +288,7 @@ product
   border: 1px solid #d0d3d8;
   height: 120px;
   opacity: 0.8;
-  margin: 0 auto;
+  margin: 0 50px;
   padding: 0 25px 16px 0;
   position: relative;
   overflow: hidden;
@@ -331,6 +336,13 @@ product
   padding: 0 19px;
 }
 
+.divider__after__advantages {
+  max-width: 956px;
+  margin: 50px auto 0 auto;
+  background: #a59595;
+  height: 3px;
+}
+
 .profit {
   max-width: 956px;
   text-align: center;
@@ -342,28 +354,16 @@ product
   color: #948796;
 }
 .profit__product {
-  position: relative;
   padding: 0 35px;
   overflow: hidden;
   cursor: pointer;
 }
-.profit__product::before {
-  content: "";
-  top: 0;
-  border-radius: 0 0 50% 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #1f1a1a;
-  z-index: -1;
-  transition: 0.8s;
+.profit__product img {
+  transform: rotate(0);
+  transition: all 0.3s;
 }
-.profit__product::before:hover {
+.profit__product img:hover {
   transform: rotate(360deg);
-}
-.profit__product:hover {
-  transform: rotate(0deg);
 }
 .profit__product__name {
   color: #948796;
