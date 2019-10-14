@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     padding: 0 20px;
-    max-width: 956px;
+    max-width: $containers-max-width;
     margin: 0 auto;
     padding-bottom: 59px;
   }
@@ -64,7 +64,7 @@
     height: 3px;
     opacity: 0.6;
     background: #ecedf0;
-    width: 956px;;
+    max-width: $containers-max-width;
     margin: 30px auto;
   }
   &__company {
@@ -76,7 +76,7 @@
   height: 2px;
   opacity: 0.6;
   background: #a59595;
-  width: 956px;;
+  max-width: $containers-max-width;
   margin: 0 auto;
 }
 
