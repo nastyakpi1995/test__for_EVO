@@ -14,9 +14,30 @@
   &__profit {
     color: #818ab6;
   }
-  &__direction:hover {
+  &__direction {
     position: relative;
-    bottom: 14px;
+    top: 0;
+    cursor: pointer;
+  }
+  &__direction:hover {
+    animation: animdash 3s;
   }
 }
 
+@keyframes animdash {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 30px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: 30px;
+  }
+  100% {
+    top: 0;
+  }
+}
